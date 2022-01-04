@@ -93,7 +93,7 @@ volatile boolean flag1Seg = FALSE;
 
 void main( void )
 {
-	sys_init();										 /* Inicializa sistemas y periféricos */
+	sys_init();										 /* Inicializa sistemas y perifÃ©ricos */
 	uart0_init();
 	lcd_init();
     uda1341ts_init();
@@ -612,7 +612,7 @@ void fecha_modo(void){
 	dibujar_x3_Numeros(139,83,BLACK,rtc_time.mon);
 	hablarNumeros(rtc_time.mon);
 	dibujar_x3(187,83,BLACK,"/");
-	hablar(" del año ");
+	hablar(" del aÃ±o ");
 	dibujar_x3_Numeros(211,83,BLACK,rtc_time.year);
 	hablarNumeros(rtc_time.year);
 
@@ -686,7 +686,7 @@ void fecha_modo(void){
 			hablarNumeros(rtc_time.mday);
 			hablar(" del mes ");
 			hablarNumeros(rtc_time.mon);
-			hablar(" del año ");
+			hablar(" del aÃ±o ");
 			hablarNumeros(rtc_time.year);
 			modo = FECHA_MODO;
 		}
